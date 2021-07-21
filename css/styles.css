@@ -14,6 +14,17 @@ a{
   background: url(../images/crosses-2713356_1920.jpg) no-repeat;
 }
 
+.animate {
+  animation-name: example;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;  
+}
+
+@keyframes example {
+  from {transform: rotateY(0deg)}
+  to {transform: rotateY(360deg)}
+}
+
 p.heading{
   font-size: 25px;
   color:#f6b319;
@@ -131,6 +142,14 @@ main section>div{
   display: inline-block;
   height: 540px;
   width: 370px;
+}
+
+.mm, .about{
+  transition:transform 5s;
+}
+
+.mm:hover, .about:hover {
+  transform: rotateY(180deg);
 }
 
 section h3{
@@ -316,3 +335,39 @@ section h3{
     color: white;
 }
 
+.media{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 50px;
+  width: 50px;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+  color: black;
+  transform: rotate(360deg);
+  text-decoration: none;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: red;
+  color: white;
+}
