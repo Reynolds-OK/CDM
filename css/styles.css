@@ -161,6 +161,7 @@ section h3{
 .even h3:hover::before {
   transform: scaleX(1);
 }
+
 .odd h3::before {
   content: "";
   position: absolute;
@@ -204,13 +205,15 @@ section h3{
   margin-top: 40px;
 }
 
-.bible .col-md-4{
-  border: 1px solid black;
-  border-radius: 5px;
-  color: black;
-  background-color:white;
-  padding: 10px;
-  text-align: justify;
+.bible div{
+  width: 70%;
+  text-align: center;
+}
+
+@media (max-width: 768px){
+  .bible div{
+  width: 100%
+}
 }
 
 /* third section */
