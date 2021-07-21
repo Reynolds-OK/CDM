@@ -88,14 +88,12 @@
                     <h3>WORSHIP WITH US</h3>
                     <div class="bible">
                         <h4>BIBLE LESSON:</h4>
-                        <div class="col-md-4">
-                        <script src="http://www.verse-a-day.com/js/NIV01.js"></script>
-                        </div>
-                        <div class="col-md-4">
-                        <script src="http://www.verse-a-day.com/js/KJV04.js"></script>
-                        </div>
-                        <div class="col-md-4">
-                        <script src="http://www.verse-a-day.com/js/NLT.js"></script>
+                        <div>
+                            <div id="the-bible-life-verse-of-the-day"></div>
+                            <script src="https://thebible.life/js/widgets/verseoftheday.js" async></script>
+                            <script>
+                                window.onload = function () { tb_verse_of_the_day("jesus-is-lord", "callbackwidget1"); };
+                            </script>
                         </div>
                     </div>
                     <div class="prayer">
